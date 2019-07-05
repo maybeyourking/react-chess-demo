@@ -1,13 +1,95 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
-}
+    font: 14px "Century Gothic", Futura, sans-serif;
+    margin: 20px;
+  }
+  
+  ol, ul {
+    padding-left: 30px;
+  }
+  
+  .board-row:after {
+    clear: both;
+    content: "";
+    display: table;
+  }
+  
+  .status {
+    margin-bottom: 10px;
+  }
+  
+  .square {
+    background: #fff;
+    border: 1px solid #999;
+    float: left;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 60px;
+    height: 60px;
+    margin-right: -1px;
+    margin-top: -1px;
+    padding: 0;
+    text-align: center;
+    width: 60px;
+  }
+  
+  .square:focus {
+    outline: none;
+  }
+  
+  .kbd-navigation .square:focus {
+    background: #ddd;
+  }
+  
+  .game {
+    display: flex;
+    flex-direction: column;
+  }
+  .game-title{
+    text-align: center;
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-size: 22px;
+  }
+  .authorbtn{
+    border: none;
+    background: none;
+  }
+  .game-author{
+    margin: 0 auto;
+    margin-bottom:25px;
+  }
+  .game-info {
+    margin: 0 auto;
+    margin-top: 10px;
+  }
+  .author-info{
+    position: fixed;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .layer{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background: rgba(255,255,255,.9);
+  }
+  .desc-active{
+    font-weight: bold;
+  }
+  .square-win{
+    color: lightgreen;
+  }
+  .game-board{
+    margin: 0 auto;
+    position: relative;
+  }
+  .draw{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 18px;
+    color: blueviolet;
+  }
+  
